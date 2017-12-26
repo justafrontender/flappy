@@ -1,0 +1,23 @@
+<body id=B>
+  <canvas id=C onclick="y = -1"></canvas>
+  <script>
+    const canvas = C.getContext('2d');
+    // , , высота нижнего столба
+    const o = [90, -92, 98];
+    let y = 0;
+    let x = 225;
+    let score = 0;
+    
+    setInterval(() => {
+      canvas.fillRect(0, 0, W = 150, W);
+      
+      for (i in o) {
+        canvas.clearRect(+i ? x : 37, o[i], + i ? 14 : 9, + i ? W : 9);
+      }
+      
+      b = o[0];
+      
+      b < W - 9 && (x < 23 || x > 46 || 58 < b && b < 89) ? (y += 0.04, x <- 13 ? (x = W, ++score) : --x, o[0] += y) : B.innerHTML = score;
+    }, 9);
+  </script>
+</body>
